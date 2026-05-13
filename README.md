@@ -44,13 +44,6 @@ Create a `.env` file in the root directory with the following variables:
 - `PORT`: Port number for the server (default: 5000)
 - `WEBSITE_URL`: The URL of the website being tracked (e.g., `https://example.com`)
 
-Example `.env` file:
-```
-MONGO_URI=mongodb+srv://jarvis:ironman@cluster-1.scqpxtj.mongodb.net/?appName=Cluster-1
-PORT=5000
-WEBSITE_URL=https://demo-site-five-sable.vercel.app/
-```
-
 ## Usage
 
 The application provides REST API endpoints for managing analytics data.
