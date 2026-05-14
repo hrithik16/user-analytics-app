@@ -4,7 +4,6 @@ const router = express.Router();
 
 const Event = require("../models/Event");
 
-const website = process.env.WEBSITE_URL
 // Store Event
 router.post("/events", async (req, res) => {
   try {
@@ -123,7 +122,7 @@ router.get("/heatmap", async (req, res) => {
     const clicks = await Event.find(
       {
         event_type: "click",
-        page_url: website,
+        page_url: page,
       },
       {
         _id: 0,
